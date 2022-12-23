@@ -2,7 +2,7 @@
 import sys
 
 
-def prime_function(n):
+def primef(n):
     if n <= 3:
         return int(n)
     if n % 2 == 0:
@@ -14,8 +14,8 @@ def prime_function(n):
             if n % i == 0:
                 return int(i)
             if n % (i + 2) == 0:
-                return prime_function(n/(i+2))
+                return primef(n/(i+2))
     return int(n)
 
 
-print(prime_function(int(sys.argv[1])))
+print(primef(int(sys.argv[1])))
