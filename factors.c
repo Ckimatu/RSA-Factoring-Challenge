@@ -6,7 +6,7 @@
  * Return: Always 0
  */
 
-int main(void)
+int main()
 {
 	long long int num = 239809320265259;
 	long int factor1 = 2;
